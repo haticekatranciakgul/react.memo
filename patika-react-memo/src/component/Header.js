@@ -1,11 +1,13 @@
 import React from 'react'
 
-function Header() {
-    console.log('render edildi')
+function Header( {number, data}) {
+    console.log('header render edildi')
   return (
     <div>
-      HEADER
+      HEADER - {number}
       <hr></hr>
+
+      <code>{JSON.stringify(data)}</code>
     </div>
   )
 }
